@@ -1,9 +1,9 @@
 {
     "fne": {
-        "js/fne.js": [
+        "js": [
             "public/js/fne.js"
         ],
-        "css/fne.css": [
+        "css": [
             "public/css/fne.css"
         ]
     }
