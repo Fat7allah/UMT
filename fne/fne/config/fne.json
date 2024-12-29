@@ -1,0 +1,14 @@
+{
+    "desktop_icons": [
+        "Membre",
+        "Carte Adhesion",
+        "Structure FNE",
+        "Structure Mutuelle",
+        "Revenu",
+        "Depense"
+    ],
+    "restricted": 1,
+    "icon": "octicon octicon-file-directory",
+    "type": "module",
+    "category": "Modules"
+} 

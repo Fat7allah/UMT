@@ -1,8 +1,10 @@
 {
-    "js/fne.min.js": [
-        "public/js/fne.js"
-    ],
-    "css/fne.min.css": [
-        "public/css/fne.css"
-    ]
+    "fne": {
+        "js/fne.js": [
+            "public/js/fne.js"
+        ],
+        "css/fne.css": [
+            "public/css/fne.css"
+        ]
+    }
 } 

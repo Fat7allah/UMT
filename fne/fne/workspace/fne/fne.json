@@ -1,0 +1,40 @@
+{
+    "charts": [],
+    "content": [
+        {
+            "type": "header",
+            "data": {
+                "text": "Gestion FNE",
+                "level": 4
+            }
+        },
+        {
+            "type": "shortcut",
+            "data": {
+                "label": "Membres",
+                "link_to": "Membre",
+                "type": "DocType"
+            }
+        },
+        {
+            "type": "shortcut",
+            "data": {
+                "label": "Cartes d'Adhésion",
+                "link_to": "Carte Adhesion",
+                "type": "DocType"
+            }
+        }
+    ],
+    "shortcuts": [
+        {
+            "label": "Membres",
+            "link_to": "Membre",
+            "type": "DocType"
+        },
+        {
+            "label": "Cartes d'Adhésion",
+            "link_to": "Carte Adhesion",
+            "type": "DocType"
+        }
+    ]
+} 
