@@ -1,0 +1,23 @@
+{
+    "add_total_row": 1,
+    "filters": [
+        {
+            "fieldname": "section",
+            "label": "Section",
+            "fieldtype": "Link",
+            "options": "Section"
+        },
+        {
+            "fieldname": "profession",
+            "label": "Profession",
+            "fieldtype": "Select",
+            "options": "\nEnseignement Primaire - Arabe\nEnseignement Primaire - Français\nEnseignement Collégial - Arabe\nEnseignement Collégial - Sciences Sociales\nEnseignement Collégial - Français\nEnseignement Collégial - Mathématiques\nEnseignement Collégial - Sciences\nEnseignement Collégial - Education Islamique\nEnseignement Collégial - Education Artistique\nEnseignement Qualifiant - Mathématiques\nEnseignement Qualifiant - Physique-Chimie\nEnseignement Qualifiant - Sciences de la Terre\nEnseignement Qualifiant - Informatique\nEnseignement Qualifiant - Arabe\nEnseignement Qualifiant - Français\nEnseignement Qualifiant - Anglais\nEnseignement Qualifiant - Sciences Sociales et Géographie\nEnseignement Qualifiant - Education Islamique\nEnseignement Qualifiant - Philosophie\nGestionnaire Pédagogique\nAdministrateur Education Nationale\nAdministrateur Cadres Communs\nSpécialiste Administration et Economie\nSpécialiste Pédagogique\nSpécialiste Social\nConseiller Orientation\nConseiller Planification\nInspecteur Orientation\nInspecteur Planification\nIntendant\nAssistant Pédagogique\nTechnicien\nInspecteur Primaire\nInspecteur Secondaire\nMédecin\nAgrégé\nProfesseur Enseignement Supérieur\nRédacteur\nInspecteur Services Financiers et Matériels"
+        },
+        {
+            "fieldname": "niveau_etudes",
+            "label": "Niveau d'études",
+            "fieldtype": "Select",
+            "options": "\nBaccalauréat\nLicence\nMaster\nDoctorat"
+        }
+    ]
+} 

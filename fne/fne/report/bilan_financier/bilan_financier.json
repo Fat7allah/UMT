@@ -1,0 +1,27 @@
+{
+    "add_total_row": 1,
+    "filters": [
+        {
+            "fieldname": "section",
+            "label": "Section",
+            "fieldtype": "Link",
+            "options": "Section"
+        },
+        {
+            "fieldname": "annee_scolaire",
+            "label": "Année Scolaire",
+            "fieldtype": "Link",
+            "options": "Annee Scolaire"
+        },
+        {
+            "fieldname": "from_date",
+            "label": "De la Date",
+            "fieldtype": "Date"
+        },
+        {
+            "fieldname": "to_date",
+            "label": "À la Date",
+            "fieldtype": "Date"
+        }
+    ]
+} 

@@ -1,0 +1,41 @@
+{
+    "name": "Annee Scolaire",
+    "doctype": "DocType",
+    "module": "FNE",
+    "fields": [
+        {
+            "fieldname": "annee",
+            "label": "Année",
+            "fieldtype": "Data",
+            "reqd": 1,
+            "unique": 1
+        },
+        {
+            "fieldname": "date_debut",
+            "label": "Date de début",
+            "fieldtype": "Date",
+            "reqd": 1
+        },
+        {
+            "fieldname": "date_fin",
+            "label": "Date de fin",
+            "fieldtype": "Date",
+            "reqd": 1
+        },
+        {
+            "fieldname": "active",
+            "label": "Active",
+            "fieldtype": "Check",
+            "default": "0"
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        }
+    ]
+} 

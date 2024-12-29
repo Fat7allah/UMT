@@ -1,0 +1,53 @@
+{
+    "name": "Carte Adhesion",
+    "doctype": "DocType",
+    "module": "FNE",
+    "naming_rule": "By script",
+    "fields": [
+        {
+            "fieldname": "membre",
+            "label": "Membre",
+            "fieldtype": "Link",
+            "options": "Membre",
+            "reqd": 1
+        },
+        {
+            "fieldname": "date_adhesion",
+            "label": "Date d'adhésion",
+            "fieldtype": "Date",
+            "reqd": 1
+        },
+        {
+            "fieldname": "date_expiration",
+            "label": "Date d'expiration",
+            "fieldtype": "Date",
+            "reqd": 1
+        },
+        {
+            "fieldname": "numero_carte",
+            "label": "Numéro de carte",
+            "fieldtype": "Data",
+            "reqd": 1,
+            "unique": 1
+        },
+        {
+            "fieldname": "statut",
+            "label": "Statut",
+            "fieldtype": "Select",
+            "options": [
+                "Payée",
+                "Non payée"
+            ],
+            "reqd": 1
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        }
+    ]
+} 

@@ -1,0 +1,77 @@
+{
+    "name": "Structure FNE",
+    "doctype": "DocType",
+    "module": "FNE",
+    "fields": [
+        {
+            "fieldname": "membre",
+            "label": "Membre",
+            "fieldtype": "Link",
+            "options": "Membre",
+            "reqd": 1
+        },
+        {
+            "fieldname": "niveau_structure",
+            "label": "Niveau de Structure",
+            "fieldtype": "Select",
+            "options": [
+                "Bureau Exécutif",
+                "Bureau Régional",
+                "Bureau Provincial",
+                "Bureau Local",
+                "Membre de Section",
+                "Relations Extérieures"
+            ],
+            "reqd": 1
+        },
+        {
+            "fieldname": "fonction",
+            "label": "Fonction",
+            "fieldtype": "Select",
+            "options": [
+                "Secrétaire National",
+                "Vice-Secrétaire National",
+                "Secrétaire Général",
+                "Vice-Secrétaire Général",
+                "Trésorier",
+                "Vice-Trésorier",
+                "Conseiller - Chargé de Mission",
+                "Secrétaire Régional",
+                "Vice-Secrétaire Régional",
+                "Secrétaire Provincial",
+                "Vice-Secrétaire Provincial",
+                "Secrétaire Local",
+                "Vice-Secrétaire Local",
+                "Membre"
+            ],
+            "reqd": 1
+        },
+        {
+            "fieldname": "region",
+            "label": "Région",
+            "fieldtype": "Data",
+            "mandatory_depends_on": "eval:doc.niveau_structure=='Bureau Régional'"
+        },
+        {
+            "fieldname": "province",
+            "label": "Province",
+            "fieldtype": "Data",
+            "mandatory_depends_on": "eval:doc.niveau_structure=='Bureau Provincial'"
+        },
+        {
+            "fieldname": "localite",
+            "label": "Localité",
+            "fieldtype": "Data",
+            "mandatory_depends_on": "eval:doc.niveau_structure=='Bureau Local'"
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        }
+    ]
+} 

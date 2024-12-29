@@ -1,0 +1,153 @@
+{
+    "name": "Membre",
+    "doctype": "DocType",
+    "module": "FNE",
+    "naming_rule": "By script",
+    "fields": [
+        {
+            "fieldname": "nom",
+            "label": "Nom",
+            "fieldtype": "Data",
+            "reqd": 1
+        },
+        {
+            "fieldname": "profession",
+            "label": "Profession",
+            "fieldtype": "Select",
+            "options": [
+                "Enseignement Primaire - Arabe",
+                "Enseignement Primaire - Français",
+                "Enseignement Collégial - Arabe",
+                "Enseignement Collégial - Sciences Sociales",
+                "Enseignement Collégial - Français",
+                "Enseignement Collégial - Mathématiques",
+                "Enseignement Collégial - Sciences",
+                "Enseignement Collégial - Education Islamique",
+                "Enseignement Collégial - Education Artistique",
+                "Enseignement Qualifiant - Mathématiques",
+                "Enseignement Qualifiant - Physique-Chimie",
+                "Enseignement Qualifiant - Sciences de la Terre",
+                "Enseignement Qualifiant - Informatique",
+                "Enseignement Qualifiant - Arabe",
+                "Enseignement Qualifiant - Français",
+                "Enseignement Qualifiant - Anglais",
+                "Enseignement Qualifiant - Sciences Sociales et Géographie",
+                "Enseignement Qualifiant - Education Islamique",
+                "Enseignement Qualifiant - Philosophie",
+                "Gestionnaire Pédagogique",
+                "Administrateur Education Nationale",
+                "Administrateur Cadres Communs",
+                "Spécialiste Administration et Economie",
+                "Spécialiste Pédagogique",
+                "Spécialiste Social",
+                "Conseiller Orientation",
+                "Conseiller Planification",
+                "Inspecteur Orientation",
+                "Inspecteur Planification",
+                "Intendant",
+                "Assistant Pédagogique",
+                "Technicien",
+                "Inspecteur Primaire",
+                "Inspecteur Secondaire",
+                "Médecin",
+                "Agrégé",
+                "Professeur Enseignement Supérieur",
+                "Rédacteur",
+                "Inspecteur Services Financiers et Matériels"
+            ],
+            "reqd": 1
+        },
+        {
+            "fieldname": "etablissement",
+            "label": "Établissement ou Branche",
+            "fieldtype": "Data",
+            "reqd": 1
+        },
+        {
+            "fieldname": "niveau_etudes",
+            "label": "Niveau d'études",
+            "fieldtype": "Select",
+            "options": [
+                "Baccalauréat",
+                "Licence",
+                "Master",
+                "Doctorat"
+            ]
+        },
+        {
+            "fieldname": "date_naissance",
+            "label": "Date de naissance",
+            "fieldtype": "Date",
+            "reqd": 1
+        },
+        {
+            "fieldname": "genre",
+            "label": "Genre",
+            "fieldtype": "Select",
+            "options": [
+                "Masculin",
+                "Féminin"
+            ],
+            "reqd": 1
+        },
+        {
+            "fieldname": "fonction",
+            "label": "Fonction",
+            "fieldtype": "Select",
+            "options": [
+                "Administration Pédagogique - Directeur",
+                "Administration Pédagogique - Surveillant Général",
+                "Administration Pédagogique - Surveillant",
+                "Professeur",
+                "Instituteur",
+                "Détaché",
+                "Administrateur",
+                "Cadre Pédagogique",
+                "Cadre Social",
+                "Cadre Administration et Economie",
+                "Assistant Pédagogique",
+                "Ingénieur",
+                "Inspecteur",
+                "Cadre Enseignement Supérieur"
+            ],
+            "reqd": 1
+        },
+        {
+            "fieldname": "telephone",
+            "label": "Téléphone",
+            "fieldtype": "Data",
+            "reqd": 1
+        },
+        {
+            "fieldname": "email",
+            "label": "Email",
+            "fieldtype": "Data",
+            "options": "Email"
+        },
+        {
+            "fieldname": "province",
+            "label": "Province",
+            "fieldtype": "Select",
+            "options": [
+                "Préfecture de Tanger",
+                "Préfecture de Tétouan",
+                "Province de Fahs-Anjra",
+                "Province de Larache",
+                "Province d'Al Hoceima",
+                "Province de Taza",
+                "Province de Chefchaouen"
+                // ... Ajoutez toutes les autres provinces
+            ],
+            "reqd": 1
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        }
+    ]
+} 

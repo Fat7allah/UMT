@@ -1,0 +1,29 @@
+{
+    "name": "Section",
+    "doctype": "DocType",
+    "module": "FNE",
+    "fields": [
+        {
+            "fieldname": "nom",
+            "label": "Nom",
+            "fieldtype": "Data",
+            "reqd": 1
+        },
+        {
+            "fieldname": "province",
+            "label": "Province",
+            "fieldtype": "Link",
+            "options": "Province",
+            "reqd": 1
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        }
+    ]
+} 

@@ -1,0 +1,65 @@
+{
+    "name": "Revenu",
+    "doctype": "DocType",
+    "module": "FNE",
+    "fields": [
+        {
+            "fieldname": "date",
+            "label": "Date",
+            "fieldtype": "Date",
+            "reqd": 1
+        },
+        {
+            "fieldname": "type_revenu",
+            "label": "Type de Revenu",
+            "fieldtype": "Select",
+            "options": [
+                "Carte d'Adhésion",
+                "Autre"
+            ],
+            "reqd": 1
+        },
+        {
+            "fieldname": "carte_adhesion",
+            "label": "Carte d'Adhésion",
+            "fieldtype": "Link",
+            "options": "Carte Adhesion",
+            "mandatory_depends_on": "eval:doc.type_revenu=='Carte d'Adhésion'"
+        },
+        {
+            "fieldname": "description",
+            "label": "Description",
+            "fieldtype": "Small Text",
+            "mandatory_depends_on": "eval:doc.type_revenu=='Autre'"
+        },
+        {
+            "fieldname": "montant",
+            "label": "Montant",
+            "fieldtype": "Currency",
+            "reqd": 1
+        },
+        {
+            "fieldname": "section",
+            "label": "Section",
+            "fieldtype": "Link",
+            "options": "Section",
+            "reqd": 1
+        },
+        {
+            "fieldname": "annee_scolaire",
+            "label": "Année Scolaire",
+            "fieldtype": "Link",
+            "options": "Annee Scolaire",
+            "reqd": 1
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        }
+    ]
+} 

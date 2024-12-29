@@ -1,0 +1,63 @@
+{
+    "name": "Structure Mutuelle",
+    "doctype": "DocType",
+    "module": "FNE",
+    "fields": [
+        {
+            "fieldname": "membre",
+            "label": "Membre",
+            "fieldtype": "Link",
+            "options": "Membre",
+            "reqd": 1
+        },
+        {
+            "fieldname": "type_structure",
+            "label": "Type de Structure",
+            "fieldtype": "Select",
+            "options": [
+                "Bureau Exécutif",
+                "Conseil Administratif",
+                "Assemblée Générale",
+                "Commission de Contrôle",
+                "Tiers Sortant"
+            ],
+            "reqd": 1
+        },
+        {
+            "fieldname": "fonction",
+            "label": "Fonction",
+            "fieldtype": "Select",
+            "options": [
+                "Président",
+                "Vice-Président",
+                "Secrétaire Général",
+                "Vice-Secrétaire Général",
+                "Trésorier",
+                "Vice-Trésorier",
+                "Conseiller",
+                "Membre"
+            ],
+            "reqd": 1
+        },
+        {
+            "fieldname": "date_debut",
+            "label": "Date de début",
+            "fieldtype": "Date",
+            "reqd": 1
+        },
+        {
+            "fieldname": "date_fin",
+            "label": "Date de fin",
+            "fieldtype": "Date"
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        }
+    ]
+} 
