@@ -1,0 +1,8 @@
+{
+    "js/fne.min.js": [
+        "public/js/fne.js"
+    ],
+    "css/fne.min.css": [
+        "public/css/fne.css"
+    ]
+} 
